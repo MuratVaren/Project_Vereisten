@@ -25,5 +25,32 @@ namespace Project_Vereisten
         {
             InitializeComponent();
         }
+        private void Imgrozen_MouseEnter(object sender, MouseEventArgs e)
+        {
+            SolidColorBrush solidColorBrush = new SolidColorBrush(Colors.Red);
+            this.Background = solidColorBrush;
+        }
+        private void ImgLavender_MouseEnter(object sender, MouseEventArgs e)
+        {
+            SolidColorBrush solidColorBrush = new SolidColorBrush(Colors.Purple);
+            this.Background = solidColorBrush;
+        }
+        private void ImgGoudsbloem_MouseEnter(object sender, MouseEventArgs e)
+        {
+            SolidColorBrush solidColorBrush = new SolidColorBrush(Colors.Orange);
+            this.Background = solidColorBrush;
+        }
+
+        private void ImgWilkens_MouseEnter(object sender, MouseEventArgs e)
+        {
+            SolidColorBrush solidColorBrush = new SolidColorBrush(Colors.Yellow);
+            this.Background = solidColorBrush;
+        }
+
+        private void Img_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SolidColorBrush solidColorBrush = new SolidColorBrush(Colors.LightGray);
+            this.Background = solidColorBrush;
+        }
     }
 }
