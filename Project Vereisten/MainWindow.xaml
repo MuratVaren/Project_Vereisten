@@ -18,7 +18,11 @@
         </Grid.RowDefinitions>
         
         <TextBlock Name="TxtBloemwinkel" Text="Bloemenwinkel Selectie Mimosa" Grid.Row="0" />
-        <TextBlock Name="TxtBloemNaam" Grid.Row="0" Grid.Column="1"/>
+        <StackPanel  Grid.Row="0" Grid.Column="1">
+            <TextBlock Name="TxtBloemNaam" />
+            <TextBlock Name="TxtBloemPrijs" />
+        </StackPanel>
+
 
         <Image Name="Imgrozen" Source="images/rozen.jpg"
                Grid.Row="1" Grid.Column="0" MouseEnter="Imgrozen_MouseEnter" 

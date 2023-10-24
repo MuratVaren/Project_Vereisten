@@ -58,22 +58,26 @@ namespace Project_Vereisten
 
         private void Imgrozen_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            TxtBloemNaam.Text = "Roos";
+            TxtBloemNaam.Text = "Rozen";
+            TxtBloemPrijs.Text = "€30";
         }
 
         private void ImgLavender_MouseDown(object sender, MouseButtonEventArgs e)
         {
             TxtBloemNaam.Text = "Lavender";
+            TxtBloemPrijs.Text = "€10";
         }
 
         private void ImgGoudsbloem_MouseDown(object sender, MouseButtonEventArgs e)
         {
             TxtBloemNaam.Text = "Goudsbloem";
+            TxtBloemPrijs.Text = "€3";
         }
 
         private void ImgWilkens_MouseDown(object sender, MouseButtonEventArgs e)
         {
             TxtBloemNaam.Text = "Wilkens bitter";
+            TxtBloemPrijs.Text = "€15";
         }
     }
 }
