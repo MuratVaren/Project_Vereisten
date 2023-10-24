@@ -17,20 +17,21 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         
-        <TextBlock Text="Bloemenwinkel Selectie Mimosa" Grid.Row="0"/>
+        <TextBlock Name="TxtBloemwinkel" Text="Bloemenwinkel Selectie Mimosa" Grid.Row="0" />
+        <TextBlock Name="TxtBloemNaam" Grid.Row="0" Grid.Column="1"/>
 
         <Image Name="Imgrozen" Source="images/rozen.jpg"
                Grid.Row="1" Grid.Column="0" MouseEnter="Imgrozen_MouseEnter" 
-               MouseLeave="Img_MouseLeave"/>
+               MouseLeave="Img_MouseLeave" MouseDown="Imgrozen_MouseDown"/>
         <Image Name="ImgLavender" Source="images/lavender.jpg"
                Grid.Row="1" Grid.Column="1" MouseEnter="ImgLavender_MouseEnter"
-               MouseLeave="Img_MouseLeave"/>
+               MouseLeave="Img_MouseLeave" MouseDown="ImgLavender_MouseDown"/>
         <Image Name="ImgGoudsbloem" Source="images/goudsbloem.png"
                Grid.Row="2" Grid.Column="0" MouseEnter="ImgGoudsbloem_MouseEnter"
-               MouseLeave="Img_MouseLeave"/>
+               MouseLeave="Img_MouseLeave" MouseDown="ImgGoudsbloem_MouseDown"/>
         <Image Name="ImgWilkens" Source="images/WilkensBitter.jpg"
                Grid.Row="2" Grid.Column="1" MouseEnter="ImgWilkens_MouseEnter"
-               MouseLeave="Img_MouseLeave"/>
+               MouseLeave="Img_MouseLeave" MouseDown="ImgWilkens_MouseDown"/>
 
 
     </Grid>

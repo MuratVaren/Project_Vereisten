@@ -25,16 +25,19 @@ namespace Project_Vereisten
         {
             InitializeComponent();
         }
+
         private void Imgrozen_MouseEnter(object sender, MouseEventArgs e)
         {
             SolidColorBrush solidColorBrush = new SolidColorBrush(Colors.Red);
             this.Background = solidColorBrush;
         }
+
         private void ImgLavender_MouseEnter(object sender, MouseEventArgs e)
         {
             SolidColorBrush solidColorBrush = new SolidColorBrush(Colors.Purple);
             this.Background = solidColorBrush;
         }
+
         private void ImgGoudsbloem_MouseEnter(object sender, MouseEventArgs e)
         {
             SolidColorBrush solidColorBrush = new SolidColorBrush(Colors.Orange);
@@ -51,6 +54,26 @@ namespace Project_Vereisten
         {
             SolidColorBrush solidColorBrush = new SolidColorBrush(Colors.LightGray);
             this.Background = solidColorBrush;
+        }
+
+        private void Imgrozen_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            TxtBloemNaam.Text = "Roos";
+        }
+
+        private void ImgLavender_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            TxtBloemNaam.Text = "Lavender";
+        }
+
+        private void ImgGoudsbloem_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            TxtBloemNaam.Text = "Goudsbloem";
+        }
+
+        private void ImgWilkens_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            TxtBloemNaam.Text = "Wilkens bitter";
         }
     }
 }
