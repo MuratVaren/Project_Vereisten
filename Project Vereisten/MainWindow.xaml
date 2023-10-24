@@ -15,11 +15,12 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         
         <TextBlock Name="TxtBloemwinkel" Text="Bloemenwinkel Selectie Mimosa" Grid.Row="0" />
         <StackPanel  Grid.Row="0" Grid.Column="1">
-            <TextBlock Name="TxtBloemNaam" />
+            <TextBlock Name="TxtBloemNaam"  />
             <TextBlock Name="TxtBloemPrijs" />
         </StackPanel>
 
@@ -37,6 +38,8 @@
                Grid.Row="2" Grid.Column="1" MouseEnter="ImgWilkens_MouseEnter"
                MouseLeave="Img_MouseLeave" MouseDown="ImgWilkens_MouseDown"/>
 
+        <Button Name="BtnNL" Content="NL" Grid.Row="3" Grid.Column="0" Click="BtnNL_Click"/>
+        <Button Name="BtnEN" Content="EN" Grid.Row="3" Grid.Column="1" Click="BtnEN_Click"/>
 
     </Grid>
 </Window>

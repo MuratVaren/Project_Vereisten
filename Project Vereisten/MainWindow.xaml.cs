@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using System.Xml;
 
 namespace Project_Vereisten
 {
@@ -21,9 +21,11 @@ namespace Project_Vereisten
     /// </summary>
     public partial class MainWindow : Window
     {
+        string taal;
         public MainWindow()
         {
             InitializeComponent();
+            taal = "nl";
         }
 
         private void Imgrozen_MouseEnter(object sender, MouseEventArgs e)
@@ -58,26 +60,73 @@ namespace Project_Vereisten
 
         private void Imgrozen_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            TxtBloemNaam.Text = "Rozen";
+            if(taal == "nl")
+            {
+                TxtBloemNaam.Text = "Rozen";
+
+            }
+            else
+            {
+                TxtBloemNaam.Text = "Roses";
+            }
             TxtBloemPrijs.Text = "€30";
         }
 
         private void ImgLavender_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            TxtBloemNaam.Text = "Lavender";
+            if(taal == "nl")
+            {
+                TxtBloemNaam.Text = "Lavendel";
+            }
+            else
+            {
+                TxtBloemNaam.Text = "Lavender";
+
+            }
             TxtBloemPrijs.Text = "€10";
         }
 
         private void ImgGoudsbloem_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            TxtBloemNaam.Text = "Goudsbloem";
+            if(taal == "nl")
+            {
+                TxtBloemNaam.Text = "Goudsbloem";
+            }
+            else
+            {
+                TxtBloemNaam.Text = "Marigold";
+            }
             TxtBloemPrijs.Text = "€3";
         }
 
         private void ImgWilkens_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            TxtBloemNaam.Text = "Wilkens bitter";
+            if(taal == "nl")
+            {
+                TxtBloemNaam.Text = "Wilkens bitter";
+            }
+            else
+            {
+                TxtBloemNaam.Text = "Golden trumpet";
+
+            }
             TxtBloemPrijs.Text = "€15";
+        }
+
+        private void BtnNL_Click(object sender, RoutedEventArgs e)
+        {
+            taal = "nl";
+            TxtBloemwinkel.Text = "Bloemenwinkel Selectie Mimosa";
+            TxtBloemNaam.Text = string.Empty;
+            TxtBloemPrijs.Text = string.Empty;
+        }
+
+        private void BtnEN_Click(object sender, RoutedEventArgs e)
+        {
+            taal = "en";
+            TxtBloemwinkel.Text = "Flowershop Selection Mimosa";
+            TxtBloemNaam.Text = string.Empty;
+            TxtBloemPrijs.Text = string.Empty;
         }
     }
 }
